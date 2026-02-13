@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+    <source src="libulibong.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="heart-container"></div>
+
+    <div id="lock-screen">
+        <div class="glass-card">
+            <div class="lock-icon"><span class="heart-pulse">❤</span></div>
+            <h2>Yours, Truly.</h2>
+            <p>A small piece of my heart, for the one who holds the key.</p>
+            
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Enter our anniversary to unlock." autofocus>
+                <div id="togglePassword" class="toggle-eye">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="unlock-btn" onclick="checkPassword()">OPEN GIFT</button>
+            <p id="error-msg" class="error-text">That's not it, try again...</p>
+        </div>
+    </div>
+
+    <div id="envelope-overlay" style="display: none;">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope" id="main-envelope">
+                <div class="heart-seal">❤</div>
+            </div>
+            <p class="click-me">Click to open your gift!</p>
+        </div>
+    </div>
+
+    <div id="main-content-wrapper" style="display: none;">
+        <header>
+            <div class="header-content">
+                <p class="recipient-name">To my forever favorite, aliksatot</p>
+
+                <h1 class="shimmer-title">Happy Valentine's Day</h1>
+                <p id="intro-greet">to the most beautiful person ever</p>
+                <div class="scroll-container">
+                    <p class="scroll-text">Scroll down to see our best times together...</p>
+                    <div class="heart-icon pulse">❤</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="moment-container">
+            <div class="moment">
+                <div class="photo-frame"><img src="img1.PNG" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Time flies so fast</h3>
+                    <p>dati aso lang kita na sinasakyan baby, now ako na yung aso mo HAHAHAHA. bilis ng panahon no baby? dati crush lang kita now baby na kita:P</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="img2.PNG" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Shared Joy:P</h3>
+                    <p>kada call natin lagi tayo nag tatawanan, nag aasaran. ang saya sa pakiramdam kapag ikaw napapasaya ko hindi naiinis huhu. super saya sa <pakiramdam:P class=""></pakiramdam:P></p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="img3.png" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Side By Side</h3>
+                    <p>Ang masasabi ko lang ay................1738 ! ey ey!HAHAHAHA. kidding aside</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="img4.png" alt="Us"></div>
+                <div class="text-content">
+                    <h3>My Safe Place</h3>
+                    <p>I feel safe and happy kapag nag-uusap tayo kahit call lang I'm so happy. kapag nag pl-play rin tayo together hehe. My travel/roblox buddy</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><video width="100%" height="auto" controls autoplay muted><source src="jadlex.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+                <div class="text-content">
+                    <h3>Always Yours Baby</h3>
+                    <p>I loved you then, and I love you even more now. I am so glad I found you, and I want to be with you forever.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="typing-container">
+            <p id="typing-text"></p>
+        </div>
+
+        <footer>
+            <p>You will always be my favorite person aliksa. <span class="heart-red">❤</span></p>
+            <button class="gift-btn" onclick="navigateToGift()">SEE YOUR FLOWER GIFT</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
