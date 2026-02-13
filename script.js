@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.setItem('musicPlaying', 'true');
             sessionStorage.setItem('musicTime', bgMusic.currentTime);
         }
-        window.location.href = 'flower/gift.html';
+        window.location.href = 'flower/index.html';
     };
 
     const togglePassword = document.querySelector('#togglePassword');
